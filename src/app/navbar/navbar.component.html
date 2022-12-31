@@ -4,35 +4,35 @@
     </div>
     
     <div class="navbar-option">
-        <a routerLink="" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">
+        <a routerLink="" routerLinkActive="navbar-option_active" [routerLinkActiveOptions]="{ exact: true }">
             <mat-icon svgIcon="home_icon"></mat-icon>
             <p>Home</p>
         </a>
     </div>
 
     <div class="navbar-option">
-        <a routerLink="{{ aboutRoute }}">
+        <a routerLink="{{ aboutRoute }}" routerLinkActive="navbar-option_active">
             <mat-icon svgIcon="about_icon"></mat-icon>
             <p>About</p>
         </a>
     </div>
 
     <div class="navbar-option">
-        <a routerLink="{{ skillsRoute }}">
+        <a routerLink="{{ skillsRoute }}" routerLinkActive="navbar-option_active">
             <mat-icon svgIcon="skills_icon"></mat-icon>
             <p>Skills</p>
         </a>
     </div>
 
     <div class="navbar-option">
-        <a routerLink="{{ projectsRoute }}">
+        <a routerLink="{{ projectsRoute }}" routerLinkActive="navbar-option_active">
             <mat-icon svgIcon="projects_icon"></mat-icon>
             <p>Projects</p>
         </a>
     </div>
 
     <div class="navbar-option">
-        <a routerLink="{{ contactRoute }}">
+        <a routerLink="{{ contactRoute }}" routerLinkActive="navbar-option_active">
             <mat-icon svgIcon="contact_icon"></mat-icon>
             <p>Contact</p>
         </a>

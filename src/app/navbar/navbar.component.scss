@@ -20,10 +20,23 @@
     border-radius: 20px;
     width: 50%;
 
+    &_active {
+        background: var(--darkGreen);
+        color: var(--white);
+        border-radius: 20px;
+        & .mat-icon {
+            color: var(--white);
+        }
+
+        & p {
+            color: var(--white);
+        }
+    }
+
     &:hover {
         background: var(--darkGreen);
         color: var(--white);
-        transition: background-color .2s ease-in, color .2s ease-in;
+        transition: background-color .1s ease-in;
 
         & .mat-icon {
             color: var(--white);
