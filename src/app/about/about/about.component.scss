@@ -1,0 +1,73 @@
+.main-container {
+    padding: 50px 0;
+
+    & .header-container {
+        position: absolute;
+        top: 100px;
+        right: 200px;
+
+        & h1 {
+            font-size: 30px;
+        }
+
+        & h2 {
+            font-size: 28px;
+        }
+    }
+
+    & .profile-img-container {
+        display: flex;
+        justify-content: center;
+
+        & img {
+            width: 50%;
+            border-radius: 50%;
+        }
+
+    }
+
+    & .text-container {
+        padding: 50px 100px;
+
+        & .text {
+            padding: 10px 0;
+        }
+    }
+
+    & .edu-img-container {
+        display: flex;
+        justify-content: center;
+        
+        & img {
+            width: 70%;
+        }
+    }
+}
+
+@media only screen and (max-width: 1815px) {
+    .main-container {
+        & .header-container {
+            right: 60px;
+        }
+    }
+}
+
+@media only screen and (max-width: 1450px) {
+    .main-container {
+        & .header-container {
+            right: 25px;
+
+            & h1 {
+                font-size: 26px;
+            }
+
+            & h2 {
+                font-size: 24px;
+            }
+        }
+
+        & .text-container {
+            padding: 50px 25px;
+        }
+    }
+}

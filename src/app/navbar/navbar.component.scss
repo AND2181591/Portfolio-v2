@@ -1,7 +1,9 @@
-.main-container {
+.nav-container {
     display: flex;
     flex-direction: column;
     gap: 50px;
+    width: 300px;
+    padding: 50px;
 }
 
 .menu-logo {
@@ -63,5 +65,19 @@
         &:hover {
             color: var(--white);
         }
+    }
+}
+
+
+@media only screen and (max-width:1900px) {
+    .nav-container {
+        width: 250px;
+        padding: 30px;
+    }
+}
+
+@media only screen and (max-width: 1250px) {
+    .nav-container {
+        display: none;
     }
 }
