@@ -26,6 +26,10 @@
 
     }
 
+    & .mobile-header-container {
+        display: none;
+    }
+
     & .text-container {
         padding: 50px 100px;
 
@@ -68,6 +72,25 @@
 
         & .text-container {
             padding: 50px 25px;
+        }
+    }
+}
+
+@media only screen and (max-width: 1250px) {
+    .main-container {
+        & .header-container {
+            display: none;
+        }
+
+        & .mobile-header-container {
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            padding-top: 24px;
+        }
+
+        & .text-container {
+            padding: 0px 25px;
         }
     }
 }

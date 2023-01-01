@@ -1,8 +1,18 @@
 .app-container {
     display: flex;
     background: var(--offWhite);
-}
 
-app-navbar {
-    background: var(--white);
+    & .hamburger-button {
+        position: absolute;
+        top: 10px;
+        left: 10px;
+
+        & button {
+            background: var(--beige);
+        }
+    }
+
+    & app-navbar {
+        background: var(--white);
+    }
 }

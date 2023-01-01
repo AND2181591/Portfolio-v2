@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Output, EventEmitter } from '@angular/core';
 import { MatIconRegistry } from '@angular/material/icon';
 import { DomSanitizer } from '@angular/platform-browser';
 import { ABOUT_ROUTE, CONTACT_ROUTE, PROJECTS_ROUTE, SKILLS_ROUTE } from '../constants/route.constants';
@@ -13,6 +13,8 @@ export class NavbarComponent {
   public skillsRoute = SKILLS_ROUTE;
   public projectsRoute = PROJECTS_ROUTE;
   public contactRoute = CONTACT_ROUTE;
+
+  @Output() public closeSideNav = new EventEmitter();
 
   constructor(
     private _iconRegistry: MatIconRegistry, 
@@ -42,5 +44,9 @@ export class NavbarComponent {
       'contact_icon', 
       _domSanitizer.bypassSecurityTrustResourceUrl('assets/icons/contact_icon.svg')
     );
+  }
+
+  public onCloseSideNav(): void {
+    this.closeSideNav.emit();
   }
 }
