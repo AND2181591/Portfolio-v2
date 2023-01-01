@@ -13,9 +13,13 @@
     text-align: center;
 
     & h1 {
-        margin: 0;
+        margin: 0 0 10px;
         font-weight: 600;
         font-size: 36px;
+
+        &:last-child {
+            margin: 0;
+        }
     }
 }
 
