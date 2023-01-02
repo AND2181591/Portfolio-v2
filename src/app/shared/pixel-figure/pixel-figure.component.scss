@@ -1,0 +1,44 @@
+.pixel-figure-container {
+    position: absolute;
+    top: calc(50% - 50px);
+    left: calc(50% + 100px);
+    width: 112px;
+    height: 120px;
+    cursor: pointer;
+}
+
+.text-bubble {
+    position: absolute;
+    right: -40px;
+    animation: flicker .8s linear infinite;
+    opacity: 1;
+    transform: rotate(8deg);
+}
+
+.pixel-figure {
+    width: 1px;
+    height: 1px;
+    opacity: 1;
+    transform: scale(3);
+    background: transparent;
+    animation: appear 3s forwards, bounce .5s infinite;
+    box-shadow: 24px 2px #190f00, 16px 3px #190f00, 17px 3px #190f00, 18px 3px #190f00, 19px 3px #190f00, 20px 3px #190f00, 21px 3px #190f00, 22px 3px #190f00, 23px 3px #190f00, 24px 3px #190f00, 15px 4px #190f00, 16px 4px #190f00, 17px 4px #190f00, 18px 4px #190f00, 19px 4px #190f00, 20px 4px #190f00, 21px 4px #190f00, 22px 4px #190f00, 23px 4px #190f00, 24px 4px #190f00, 12px 5px #140c00, 13px 5px #140c00, 14px 5px #190f00, 15px 5px #190f00, 16px 5px #190f00, 17px 5px #190f00, 18px 5px #190f00, 19px 5px #190f00, 20px 5px #190f00, 21px 5px #190f00, 22px 5px #190f00, 23px 5px #190f00, 24px 5px #190f00, 13px 6px #140c00, 14px 6px #140c00, 15px 6px #190f00, 16px 6px #190f00, 17px 6px #190f00, 18px 6px #190f00, 19px 6px #190f00, 20px 6px #190f00, 21px 6px #190f00, 22px 6px #190f00, 23px 6px #190f00, 24px 6px #140c00, 13px 7px #140c00, 14px 7px #140c00, 15px 7px #140c00, 16px 7px #140c00, 17px 7px #140c00, 18px 7px #140c00, 19px 7px #140c00, 20px 7px #140c00, 21px 7px #140c00, 22px 7px #140c00, 23px 7px #140c00, 13px 8px #140c00, 14px 8px #140c00, 15px 8px #140c00, 16px 8px #eaceae, 17px 8px #eaceae, 18px 8px #eaceae, 19px 8px #eaceae, 20px 8px #eaceae, 21px 8px #eaceae, 22px 8px #eaceae, 23px 8px #eaceae, 13px 9px #140c00, 14px 9px #140c00, 15px 9px #eaceae, 16px 9px #eaceae, 17px 9px #eaceae, 18px 9px #eaceae, 19px 9px #eaceae, 20px 9px #eaceae, 21px 9px #eaceae, 22px 9px #eaceae, 23px 9px #eaceae, 13px 10px #140c00, 14px 10px #140c00, 15px 10px #eaceae, 16px 10px #eaceae, 17px 10px #000000, 18px 10px #eaceae, 19px 10px #eaceae, 20px 10px #eaceae, 21px 10px #000000, 22px 10px #eaceae, 23px 10px #eaceae, 13px 11px #eaceae, 14px 11px #140c00, 15px 11px #eaceae, 16px 11px #eaceae, 17px 11px #000000, 18px 11px #eaceae, 19px 11px #eaceae, 20px 11px #eaceae, 21px 11px #000000, 22px 11px #eaceae, 23px 11px #eaceae, 13px 12px #b8966f, 14px 12px #b8966f, 15px 12px #eaceae, 16px 12px #eaceae, 17px 12px #eaceae, 18px 12px #eaceae, 19px 12px #eaceae, 20px 12px #eaceae, 21px 12px #eaceae, 22px 12px #eaceae, 23px 12px #eaceae, 13px 13px #140c00, 14px 13px #b8966f, 15px 13px #eaceae, 16px 13px #000000, 17px 13px #000000, 18px 13px #000000, 19px 13px #000000, 20px 13px #000000, 21px 13px #eaceae, 22px 13px #eaceae, 23px 13px #eaceae, 14px 14px #b8966f, 15px 14px #eaceae, 16px 14px #000000, 17px 14px #000000, 18px 14px #000000, 19px 14px #000000, 20px 14px #000000, 21px 14px #eaceae, 22px 14px #eaceae, 23px 14px #eaceae, 14px 15px #b8966f, 15px 15px #eaceae, 16px 15px #eaceae, 17px 15px #8f0000, 18px 15px #8f0000, 19px 15px #000000, 20px 15px #eaceae, 21px 15px #eaceae, 22px 15px #eaceae, 23px 15px #eaceae, 14px 16px #b8966f, 15px 16px #eaceae, 16px 16px #eaceae, 17px 16px #eaceae, 18px 16px #eaceae, 19px 16px #eaceae, 20px 16px #eaceae, 21px 16px #eaceae, 22px 16px #eaceae, 23px 16px #eaceae, 15px 17px #b8966f, 16px 17px #eaceae, 17px 17px #eaceae, 18px 17px #eaceae, 19px 17px #eaceae, 20px 17px #eaceae, 21px 17px #eaceae, 22px 17px #eaceae, 13px 18px #bbb3aa, 14px 18px #918f8d, 15px 18px #bbb3aa, 16px 18px #b8966f, 17px 18px #b8966f, 18px 18px #b8966f, 19px 18px #eaceae, 20px 18px #eaceae, 21px 18px #bbb3aa, 22px 18px #918f8d, 23px 18px #bbb3aa, 12px 19px #bbb3aa, 13px 19px #918f8d, 14px 19px #918f8d, 15px 19px #918f8d, 16px 19px #918f8d, 17px 19px #b8966f, 18px 19px #eaceae, 19px 19px #eaceae, 20px 19px #8d8b8b, 21px 19px #8d8b8b, 22px 19px #918f8d, 23px 19px #918f8d, 24px 19px #bbb3aa, 12px 20px #b8966f, 13px 20px #5c5c5c, 14px 20px #918f8d, 15px 20px #918f8d, 16px 20px #918f8d, 17px 20px #bbb3aa, 18px 20px #bbb3aa, 19px 20px #bbb3aa, 20px 20px #918f8d, 21px 20px #918f8d, 22px 20px #918f8d, 23px 20px #5c5c5c, 24px 20px #b8966f, 11px 21px #eaceae, 12px 21px #b8966f, 13px 21px #b8966f, 14px 21px #5c5c5c, 15px 21px #918f8d, 16px 21px #918f8d, 17px 21px #918f8d, 18px 21px #918f8d, 19px 21px #918f8d, 20px 21px #918f8d, 21px 21px #918f8d, 22px 21px #5c5c5c, 23px 21px #b8966f, 24px 21px #eaceae, 26px 21px #eaceae, 27px 21px #eaceae, 28px 21px #eaceae, 11px 22px #eaceae, 12px 22px #eaceae, 13px 22px #b8966f, 14px 22px #5c5c5c, 15px 22px #918f8d, 16px 22px #918f8d, 17px 22px #918f8d, 18px 22px #918f8d, 19px 22px #918f8d, 20px 22px #918f8d, 21px 22px #918f8d, 22px 22px #5c5c5c, 23px 22px #b8966f, 24px 22px #b8966f, 25px 22px #b8966f, 26px 22px #eaceae, 27px 22px #b8966f, 28px 22px #eaceae, 11px 23px #eaceae, 12px 23px #eaceae, 14px 23px #5c5c5c, 15px 23px #918f8d, 16px 23px #918f8d, 17px 23px #918f8d, 18px 23px #918f8d, 19px 23px #918f8d, 20px 23px #5c5c5c, 21px 23px #5c5c5c, 22px 23px #5c5c5c, 24px 23px #b8966f, 25px 23px #b8966f, 26px 23px #b8966f, 27px 23px #b8966f, 28px 23px #eaceae, 11px 24px #b8966f, 12px 24px #eaceae, 13px 24px #eaceae, 14px 24px #5c5c5c, 15px 24px #5c5c5c, 16px 24px #918f8d, 17px 24px #918f8d, 18px 24px #918f8d, 19px 24px #918f8d, 20px 24px #918f8d, 21px 24px #918f8d, 22px 24px #5c5c5c, 11px 25px #b8966f, 12px 25px #b8966f, 13px 25px #eaceae, 14px 25px #eaceae, 15px 25px #eaceae, 16px 25px #5c5c5c, 17px 25px #5c5c5c, 18px 25px #5c5c5c, 19px 25px #5c5c5c, 20px 25px #5c5c5c, 21px 25px #5c5c5c, 22px 25px #5c5c5c, 12px 26px #b8966f, 13px 26px #b8966f, 14px 26px #b8966f, 15px 26px #eaceae, 16px 26px #1f2b65, 17px 26px #1f2b65, 18px 26px #1f2b65, 19px 26px #1f2b65, 20px 26px #1f2b65, 21px 26px #1f2b65, 22px 26px #1f2b65, 23px 26px #586edf, 13px 27px #b8966f, 14px 27px #b8966f, 15px 27px #1f2b65, 16px 27px #1f2b65, 17px 27px #1f2b65, 18px 27px #1f2b65, 19px 27px #1f2b65, 20px 27px #1f2b65, 21px 27px #1f2b65, 22px 27px #384899, 23px 27px #384899, 24px 27px #586edf, 12px 28px #1f2b65, 13px 28px #1f2b65, 14px 28px #1f2b65, 15px 28px #1f2b65, 16px 28px #1f2b65, 17px 28px #1f2b65, 18px 28px #1f2b65, 19px 28px #1f2b65, 20px 28px #1f2b65, 21px 28px #1f2b65, 22px 28px #1f2b65, 23px 28px #384899, 24px 28px #384899, 11px 29px #384899, 12px 29px #384899, 13px 29px #1f2b65, 14px 29px #1f2b65, 22px 29px #1f2b65, 23px 29px #1f2b65, 24px 29px #384899, 25px 29px #384899, 11px 30px #1f2b65, 12px 30px #1f2b65, 13px 30px #1f2b65, 23px 30px #1f2b65, 24px 30px #384899, 25px 30px #384899, 26px 30px #586edf, 10px 31px #ffffff, 11px 31px #ffffff, 12px 31px #5b805c, 13px 31px #1f2b65, 23px 31px #1f2b65, 24px 31px #1f2b65, 25px 31px #1f2b65, 26px 31px #ffffff, 27px 31px #ffffff, 9px 32px #5b805c, 10px 32px #5b805c, 11px 32px #5b805c, 12px 32px #5b805c, 13px 32px #5b805c, 23px 32px #5b805c, 24px 32px #5b805c, 25px 32px #5b805c, 26px 32px #5b805c, 27px 32px #5b805c, 28px 32px #5b805c;
+}
+
+@keyframes bounce {
+    0% {
+        transform: scale(3) translateY(0px);
+    }
+    50% {
+        transform: scale(3) translateY(-1px);
+    }
+    100% {
+        transform: scale(3) translateY(0px);
+    }
+}
+
+@keyframes flicker {
+    50% {
+        opacity: 0;
+    }
+}
