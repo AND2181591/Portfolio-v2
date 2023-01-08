@@ -1,4 +1,7 @@
-<div class="pixel-figure-container">
-    <div class="text-bubble">Click me!</div>
-    <div class="pixel-figure"></div>
+<div class="pixel-figure-container" (click)="onFigureClick()">
+    <div *ngIf="!animationActivated" class="pixel-figure-container_inner">
+        <div class="text-bubble">Click me!</div>
+        <div class="pixel-figure"></div>
+    </div>
+    <div *ngIf="animationActivated" class="pixel-figure-posed"></div>
 </div>

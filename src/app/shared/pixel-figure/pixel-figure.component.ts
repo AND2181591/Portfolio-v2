@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input, Output, EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'app-pixel-figure',
@@ -6,5 +6,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./pixel-figure.component.scss']
 })
 export class PixelFigureComponent {
+  @Input() public animationActivated: boolean = false;
+  @Output() public pixelFigureClicked = new EventEmitter<void>();
 
+  public onFigureClick(): void {
+    this.pixelFigureClicked.emit();
+  }
 }
