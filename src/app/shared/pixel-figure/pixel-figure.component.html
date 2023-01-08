@@ -1,4 +1,4 @@
-<div class="pixel-figure-container" (click)="onFigureClick()">
+<div [ngClass]="!animationActivated ? 'pixel-figure-container' : 'pixel-figure-container_animated'" (click)="onFigureClick()">
     <div *ngIf="!animationActivated" class="pixel-figure-container_inner">
         <div class="text-bubble">Click me!</div>
         <div class="pixel-figure"></div>

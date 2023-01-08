@@ -1,7 +1,10 @@
 <div [ngClass]="animationActivated === false ? 'main-container' : 'main-container_night'">
 
-    <app-fireworks *ngIf="animationActivated"></app-fireworks>
+    <!-- <app-fireworks *ngIf="animationActivated"></app-fireworks> -->
+
+    <app-neon-sign *ngIf="animationActivated"></app-neon-sign>
+
     <app-pixel-figure 
-    [animationActivated]="animationActivated"
-    (pixelFigureClicked)="onPixelFigureClicked()"></app-pixel-figure>
+        [animationActivated]="animationActivated"
+        (pixelFigureClicked)="onPixelFigureClicked()"></app-pixel-figure>
 </div>

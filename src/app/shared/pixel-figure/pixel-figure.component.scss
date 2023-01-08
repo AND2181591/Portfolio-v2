@@ -1,10 +1,15 @@
-.pixel-figure-container {
+.pixel-figure-container, .pixel-figure-container_animated {
     position: absolute;
     top: calc(50% - 50px);
-    left: calc(50% + 100px);
+    left: 50%;
+    margin-left: 115px;
     width: 112px;
     height: 120px;
     cursor: pointer;
+}
+
+.pixel-figure-container_animated {
+    margin-left: 144px;
 }
 
 .text-bubble {
@@ -60,5 +65,25 @@
 @keyframes flicker {
     50% {
         opacity: 0;
+    }
+}
+
+@media only screen and (max-width:1900px) {
+    .pixel-figure-container {
+        margin-left: 70px;
+    }
+
+    .pixel-figure-container_animated {
+        margin-left: 99px;
+    }
+}
+
+@media only screen and (max-width:1250px) {
+    .pixel-figure-container {
+        margin-left: -78px;
+    }
+
+    .pixel-figure-container_animated {
+        margin-left: -56px;
     }
 }
