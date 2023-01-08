@@ -1,4 +1,6 @@
-<div class="main-container">
+<div [ngClass]="animationActivated === false ? 'main-container' : 'main-container_night'">
+
+    <app-fireworks *ngIf="animationActivated"></app-fireworks>
     <app-pixel-figure 
     [animationActivated]="animationActivated"
     (pixelFigureClicked)="onPixelFigureClicked()"></app-pixel-figure>
