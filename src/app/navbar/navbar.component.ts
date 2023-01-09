@@ -1,7 +1,7 @@
 import { Component, Output, EventEmitter } from '@angular/core';
 import { MatIconRegistry } from '@angular/material/icon';
 import { DomSanitizer } from '@angular/platform-browser';
-import { ABOUT_ROUTE, CONTACT_ROUTE, PROJECTS_ROUTE, SKILLS_ROUTE } from '../constants/route.constants';
+import { ABOUT_ROUTE, CONTACT_ROUTE, PROJECTS_ROUTE } from '../constants/route.constants';
 
 @Component({
   selector: 'app-navbar',
@@ -10,7 +10,6 @@ import { ABOUT_ROUTE, CONTACT_ROUTE, PROJECTS_ROUTE, SKILLS_ROUTE } from '../con
 })
 export class NavbarComponent {
   public aboutRoute = ABOUT_ROUTE;
-  public skillsRoute = SKILLS_ROUTE;
   public projectsRoute = PROJECTS_ROUTE;
   public contactRoute = CONTACT_ROUTE;
 

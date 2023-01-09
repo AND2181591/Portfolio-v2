@@ -1,4 +1,4 @@
-<div [ngClass]="animationActivated === false ? 'main-container' : 'main-container_night'">
+<div [@pageAppear] [ngClass]="animationActivated === false ? 'main-container' : 'main-container_night'">
 
     <app-fireworks *ngIf="animationActivated"></app-fireworks>
 

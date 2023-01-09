@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { ABOUT_ROUTE, CONTACT_ROUTE, PROJECTS_ROUTE, SKILLS_ROUTE } from './constants/route.constants';
+import { ABOUT_ROUTE, CONTACT_ROUTE, PROJECTS_ROUTE } from './constants/route.constants';
 import { HomeComponent } from './home/home.component';
 
 const routes: Routes = [
@@ -14,11 +14,6 @@ const routes: Routes = [
     loadChildren: () => 
       import('./projects/projects.module').then(m => m.ProjectsModule)
   }, 
-  { 
-    path: SKILLS_ROUTE, 
-    loadChildren: () => 
-      import('./skills/skills.module').then(m => m.SkillsModule)
-  },
   { 
     path: ABOUT_ROUTE, 
     loadChildren: () => 
