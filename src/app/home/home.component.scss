@@ -3,6 +3,7 @@
     width: calc(100vw - 400px);
     display: flex;
     justify-content: center;
+    align-items: center;
     transition: background-color 2s;
     overflow: hidden;
 }
@@ -11,9 +12,9 @@
     background-color: #000b16;
 }
 
-app-neon-sign {
-    padding-top: 10%;
-}
+// app-neon-sign {
+//     padding-top: 10%;
+// }
 
 @media only screen and (max-width:1900px) {
     .main-container, .main-container_night {
