@@ -2,7 +2,7 @@
 
     <app-fireworks *ngIf="animationActivated"></app-fireworks>
 
-    <app-neon-sign *ngIf="animationActivated"></app-neon-sign>
+    <app-neon-sign *ngIf="animationActivated" [@appearAnimation]></app-neon-sign>
 
     <app-pixel-figure 
         [animationActivated]="animationActivated"
