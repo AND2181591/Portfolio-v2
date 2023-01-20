@@ -52,7 +52,7 @@
         justify-content: center;
         
         & img {
-            width: 70%;
+            width: 50%;
         }
     }
 }
@@ -61,6 +61,13 @@
     .main-container {
         & .header-container {
             right: 60px;
+        }
+
+        & .edu-img-container {
+
+            & img {
+                width: 60%;
+            }
         }
     }
 }
@@ -100,6 +107,13 @@
 
         & .text-container {
             padding: 0px 25px;
+        }
+
+        & .edu-img-container {
+
+            & img {
+                width: 80%;
+            }
         }
     }
 }
