@@ -4,8 +4,20 @@
     </div>
 
     <div class="projects-container">
-        <div class="project">
-            
+        <div class="project" *ngFor="let project of projects">
+            <img [src]="project.image" alt="Tasks application">
+            <div class="project-desc">
+                <h2>{{ project.name }}</h2>
+                <h3>{{ project.description }}</h3>
+                <!-- <button mat-raised-button>View Project Details</button> -->
+                <div class="link-button">
+                    <a href="">
+                        <h3>View Project Details</h3>
+                    </a>
+                </div>
+                
+            </div>
         </div>
+        
     </div>
 </div>
