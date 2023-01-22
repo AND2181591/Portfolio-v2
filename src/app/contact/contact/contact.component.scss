@@ -23,23 +23,34 @@
         align-items: center;
         gap: 75px;
 
-        & .link {
-            padding: 10px 15px;
-            background: var(--darkGreen);
+        .link-button {
             border-radius: 20px;
-            cursor: pointer;
-            transition: background-color .1s;
+            background: var(--darkGreen);
 
             &:hover {
-                background: var(--darkBrown);
+                background: var(--darkGreen);
+                color: var(--white);
             }
-
-            & h3 {
-                margin: 0;
-
-                & a {
-                    text-decoration: none;
+        
+            & a {
+                display: flex;
+                align-items: center;
+                gap: 10px;
+                text-decoration: none;
+                font-weight: 500;
+                padding: 10px 15px;
+                border-radius: 20px;
+                transition: background-color .1s ease-in;
+        
+                & h3 {
+                    margin: 0;
+                    padding-top: 1px;
                     color: var(--white);
+                }
+        
+                &:hover {
+                    background-color: var(--darkBrown);
+                    border-radius: 20px;
                 }
             }
         }
