@@ -1,0 +1,14 @@
+<div class="projects-container">
+    <div class="project" *ngFor="let project of projects">
+        <img [src]="project.image" [alt]="project.name">
+        <div class="project-desc">
+            <h2>{{ project.name }}</h2>
+            <h3>{{ project.description }}</h3>
+            <div class="link-button">
+                <a routerLink="{{ projectItemRoute }}/{{ project.id }}">
+                    <h3>View Project Details</h3>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
