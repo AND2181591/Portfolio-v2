@@ -1,4 +1,4 @@
-<div class="projects-container">
+<div class="projects-container" [@pageAppear]>
     <div class="project" *ngFor="let project of projects">
         <img [src]="project.image" [alt]="project.name">
         <div class="project-desc">

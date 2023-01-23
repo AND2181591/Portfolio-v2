@@ -1,0 +1,176 @@
+.project-container {
+    padding: 200px 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+
+    & .header {
+        h1 {
+            font-size: 30px;
+            font-weight: 500;
+        }
+    }
+
+    & .link-button {
+        border-radius: 20px;
+        background: var(--darkGreen);
+        animation: pulse 3s infinite;
+    
+        &:hover {
+            background: var(--darkGreen);
+            color: var(--white);
+        }
+    
+        & a {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            text-decoration: none;
+            font-weight: 500;
+            padding: 10px 30px;
+            border-radius: 20px;
+            transition: background-color .1s ease-in;
+    
+            & h3 {
+                margin: 0;
+                padding-top: 1px;
+                color: var(--white);
+                animation: textPulse 3s infinite;
+            }
+    
+            &:hover {
+                background-color: var(--darkBrown);
+                border-radius: 20px;
+            }
+        }
+    }
+
+    & img {
+        width: 900px;
+        border: solid var(--darkGreen);
+    }
+
+    & .project-desc {
+        padding: 0 100px;
+
+        & h1 {
+            text-align: center;
+        }
+
+        & .brief-desc {
+            text-align: center;
+        }
+    }
+
+    & .accomplishments, & .tech-used {
+        padding: 0 20px;
+    }
+
+    & .accomplishments {
+        & h1 {
+            text-align: center;
+        }
+    }
+
+    & .tech-used {
+        & h1 {
+            text-align: center;
+        }
+    }
+
+    & .link-container {
+        display: flex;
+        gap: 20px;
+        
+        & .go-back, & .github {
+            border-radius: 20px;
+            background: var(--darkGreen);
+    
+            &:hover {
+                background: var(--darkGreen);
+                color: var(--white);
+            }
+        
+            & a {
+                display: flex;
+                align-items: center;
+                gap: 10px;
+                text-decoration: none;
+                font-weight: 500;
+                padding: 10px 30px;
+                border-radius: 20px;
+                transition: background-color .1s ease-in;
+        
+                & h3 {
+                    margin: 0;
+                    padding-top: 1px;
+                    color: var(--white);
+                }
+        
+                &:hover {
+                    background-color: var(--darkBrown);
+                    border-radius: 20px;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 1815px) {
+    .project-container {
+        padding: 150px 0;
+
+        & img {
+            width: 800px;
+        }
+    }
+}
+
+@media only screen and (max-width: 1250px) {
+    .project-container {
+        padding: 125px 0;
+
+        & img {
+            width: 650px;
+        }
+
+        & .project-desc {
+            padding: 0 20px;
+        }
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    .project-container {
+
+        & img {
+            width: 85%;
+        }
+    }
+}
+
+@keyframes pulse {
+    0% {
+        background: var(--darkGreen);
+    }
+    50% {
+        background: var(--beige);
+    }
+    100% {
+        background: var(--darkGreen);
+    }
+}
+
+@keyframes textPulse {
+    0% {
+        color: var(--white);
+    }
+    50% {
+        color: var(--black);
+    }
+    100% {
+        color: var(--white);
+    }
+}

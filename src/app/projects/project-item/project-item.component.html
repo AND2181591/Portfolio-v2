@@ -1,1 +1,48 @@
-<p>project-item works!</p>
+<div class="project-container" [@pageAppear]>
+    <div class="header">
+        <h1>{{ project.name }}</h1>
+    </div>
+
+    <div class="link-button">
+        <a href="{{ project.deployLink }}" target="_blank">
+            <h3>Try It Out!</h3>
+        </a>
+    </div>
+
+    <img src="{{ project.image }}" alt="{{ project.name }}">
+
+    <div class="project-desc">
+        <h1>Project Overview</h1>
+        <p class="brief-desc">{{ project.description }}</p>
+        <p>{{ project.descriptionExtended }}</p>
+    </div>
+
+    <div class="accomplishments">
+        <h1>Accomplishments</h1>
+        <ul>
+            <li *ngFor="let a of project.accomplishments">
+                <p>{{ a }}</p>
+            </li>
+        </ul>
+    </div>
+
+    <div class="tech-used">
+        <h1>Technology Used</h1>
+        <mat-chip-listbox>
+            <mat-chip *ngFor="let tech of project.techUsed">{{ tech }}</mat-chip>
+        </mat-chip-listbox>
+    </div>
+
+    <div class="link-container">
+        <div class="go-back">
+            <a routerLink="/{{ projectsRoute }}">
+                <h3>Go back...</h3>
+            </a>
+        </div>
+        <div class="github">
+            <a href="{{ project.gitHubLink }}" target="_blank">
+                <h3>View On GitHub</h3>
+            </a>
+        </div>
+    </div>
+</div>

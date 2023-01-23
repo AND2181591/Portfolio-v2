@@ -19,7 +19,8 @@ const routes: Routes = [
 @NgModule({
   declarations: [
     ProjectsComponent,
-    ProjectsListComponent
+    ProjectsListComponent, 
+    ProjectItemComponent
   ],
   imports: [
     CommonModule, 
