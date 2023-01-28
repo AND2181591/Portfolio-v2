@@ -28,6 +28,5 @@ export class ProjectItemComponent implements OnInit {
   public ngOnInit(): void {
     const projectID = this._route.snapshot.params['id'];
     this.project = this._projectsService.getSingleProject(projectID);
-    console.log(this.project)
   }
 }
