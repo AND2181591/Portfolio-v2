@@ -9,11 +9,7 @@
 }
 
 .pixel-figure-container:focus, .pixel-figure-container_animated:focus {
-    outline: none;
-}
-
-.pixel-figure-container:active, .pixel-figure-container_animated:active {
-    outline: none;
+    outline: 0;
 }
 
 .pixel-figure-container_animated {
