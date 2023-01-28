@@ -73,7 +73,7 @@ export class ProjectsService {
       description: `
         This application checks which season is occurring based on your latitude position in the world.
       `, 
-      descriptionExtended: 'I had fun building this one since I focused solely on styling once the core logic was set up. It ' + 
+      descriptionExtended: 'This application will ask for your location in order to work. Be sure to allow it. I had fun building this one since I focused solely on styling once the core logic was set up. It ' + 
       "doesn't do too much beyond displaying the season in each hemisphere, but it sure looks pretty!", 
       accomplishments: [
         'Use of Windows Geolocation.', 
