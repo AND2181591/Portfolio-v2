@@ -12,6 +12,10 @@
     outline: none;
 }
 
+.pixel-figure-container:active, .pixel-figure-container_animated:active {
+    outline: none;
+}
+
 .pixel-figure-container_animated {
     margin-left: 144px;
 }
@@ -30,7 +34,6 @@
     opacity: 1;
     transform: scale(3);
     background: transparent;
-    // animation: appear 3s forwards, bounce .5s infinite;
     -webkit-animation-name: appear, bounce;
     -webkit-animation-duration: 3s, .5s;
     -webkit-animation-iteration-count: infinite;
