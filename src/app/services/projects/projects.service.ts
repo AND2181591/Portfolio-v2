@@ -16,7 +16,7 @@ export class ProjectsService {
       descriptionExtended: 'GameStoop is a fully responsive, mock storefront project I modeled after the GameStop website (as it ' + 
         'was in 2021, at least). This idea came about while viewing the various free APIs that were available on ' + 
         'RapidAPI.com and I decided to get a little creative. It will flow through a normal browsing and checkout experience ' + 
-        "for the user, but end with a mock checkout form. It won't actually save your information or accept any payment).", 
+        "for the user, but end with a mock checkout form. It won't actually save your information or accept any payment.", 
       accomplishments: [
         'Connected to the RAWR API found on RapidAPI.com to display video game data', 
         'Mild use of Angular Material', 
