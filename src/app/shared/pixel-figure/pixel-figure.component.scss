@@ -8,6 +8,10 @@
     cursor: pointer;
 }
 
+.pixel-figure-container:focus, .pixel-figure-container_animated:focus {
+    outline: none;
+}
+
 .pixel-figure-container_animated {
     margin-left: 144px;
 }
